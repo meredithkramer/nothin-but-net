@@ -1,2 +1,3 @@
 # nothin-but-net
-basketball fanatics game site
+
+A basketball fanatics fan site by Meredith Kramer, Brien Hewan-Lowe, and Dan McMullen
