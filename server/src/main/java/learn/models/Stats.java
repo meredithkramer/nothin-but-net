@@ -5,7 +5,7 @@ import java.util.Objects;
 
 public class Stats {
     private int statsId;
-    private int playerId;
+    private Player player;
     private BigDecimal pts;
     private BigDecimal reb;
     private BigDecimal ast;
@@ -18,9 +18,10 @@ public class Stats {
     private BigDecimal fg3Pct;
     private BigDecimal ftPct;
 
-    public Stats(int statsId, int playerId, BigDecimal pts, BigDecimal reb, BigDecimal ast, BigDecimal stl, BigDecimal blk, BigDecimal turnover, int gamesPlayed, String min, BigDecimal fgPct, BigDecimal fg3Pct, BigDecimal ftPct) {
+    public Stats(int statsId, Player player, BigDecimal pts, BigDecimal reb, BigDecimal ast, BigDecimal stl,
+                 BigDecimal blk, BigDecimal turnover, int gamesPlayed, String min, BigDecimal fgPct, BigDecimal fg3Pct, BigDecimal ftPct) {
         this.statsId = statsId;
-        this.playerId = playerId;
+        this.player = player;
         this.pts = pts;
         this.reb = reb;
         this.ast = ast;
@@ -42,12 +43,12 @@ public class Stats {
         this.statsId = statsId;
     }
 
-    public int getPlayerId() {
-        return playerId;
+    public Player getPlayer() {
+        return player;
     }
 
-    public void setPlayerId(int playerId) {
-        this.playerId = playerId;
+    public void setPlayer(Player playerId) {
+        this.player = playerId;
     }
 
     public BigDecimal getPts() {
@@ -143,19 +144,19 @@ public class Stats {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Stats stats = (Stats) o;
-        return statsId == stats.statsId && playerId == stats.playerId && gamesPlayed == stats.gamesPlayed && Objects.equals(pts, stats.pts) && Objects.equals(reb, stats.reb) && Objects.equals(ast, stats.ast) && Objects.equals(stl, stats.stl) && Objects.equals(blk, stats.blk) && Objects.equals(turnover, stats.turnover) && Objects.equals(min, stats.min) && Objects.equals(fgPct, stats.fgPct) && Objects.equals(fg3Pct, stats.fg3Pct) && Objects.equals(ftPct, stats.ftPct);
+        return statsId == stats.statsId && player == stats.player && gamesPlayed == stats.gamesPlayed && Objects.equals(pts, stats.pts) && Objects.equals(reb, stats.reb) && Objects.equals(ast, stats.ast) && Objects.equals(stl, stats.stl) && Objects.equals(blk, stats.blk) && Objects.equals(turnover, stats.turnover) && Objects.equals(min, stats.min) && Objects.equals(fgPct, stats.fgPct) && Objects.equals(fg3Pct, stats.fg3Pct) && Objects.equals(ftPct, stats.ftPct);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(statsId, playerId, pts, reb, ast, stl, blk, turnover, gamesPlayed, min, fgPct, fg3Pct, ftPct);
+        return Objects.hash(statsId, player, pts, reb, ast, stl, blk, turnover, gamesPlayed, min, fgPct, fg3Pct, ftPct);
     }
 
     @Override
     public String toString() {
         return "Stats{" +
                 "statsId=" + statsId +
-                ", playerId=" + playerId +
+                ", player=" + player +
                 ", pts=" + pts +
                 ", reb=" + reb +
                 ", ast=" + ast +
