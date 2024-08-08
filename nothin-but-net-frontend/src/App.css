@@ -1,42 +1,125 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* PALLETTE */
+/* 
+#1a1a1a -- dark (background)
+#1b1b1b - dark accent
+#253b73 -- NBA blue
+#b52532 -- NBA red
+#f7e0e0 -- light accent
+#f7f7f7 -- light (text)
+*/
+
+/* ----------------- CSS RESET ----------------- */
+
+*, *::before, *::after {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #1a1a1a;
+  color: #f7f7f7;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  width: 100%;
+}
+
+input, button, textarea, select {
+  width: 100%;
+  display: block;
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul, li {
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Create root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+/* ----------------- NAVBAR ----------------- */
+
+.navbar {
+  position: sticky;
+}
+
+.nav-start {
+  /* border: 2px dotted yellow; */
+  display: flex;
+  padding: .75em;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.35em;
+  background-color: #1f1f1f;
+}
+
+.nav-logo {
+  height: 75px;
+  width: 125px;
+}
+
+.nav-logo {
+  animation: none;
+}
+
+.nav-logo:hover {
+  animation: bounce ease 1s infinite;
+}
+
+.navbar-nav {
+  /* border: 2px dotted purple; */
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+
+.nav-link {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all ease .5s;
+}
+
+.nav-link:hover {
+  color: #f7e0e0;
+  border-bottom: 1px solid #f7e0e0;
+  transition: all ease .2s;
+}
+
+/* ----------------- ANIMATIONS ----------------- */
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-3px);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
