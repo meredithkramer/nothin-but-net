@@ -13,6 +13,8 @@ public class Player {
     private int draftYear;
     private Team team;
 
+    public Player() {}
+
     public Player(int playerId, String firstName, String lastName, Position position, String height, String weight,
                   String number, int draftYear, Team team) {
         this.playerId = playerId;

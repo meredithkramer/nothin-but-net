@@ -1,20 +1,24 @@
 package learn.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Objects;
 
 public class Team {
 
-    private int teamId;
+    private int id;
     private Conference conference;
     private Division division;
     private String city;
     private String name;
+    @JsonProperty("full_name")
     private String fullName;
     private String abbreviation;
 
-    public Team(int teamId, String abbreviation, String city, Conference conference, Division division, String fullName,
+    public Team() {}
+    public Team(int id, String abbreviation, String city, Conference conference, Division division, String fullName,
                 String name) {
-        this.teamId = teamId;
+        this.id = id;
         this.abbreviation = abbreviation;
         this.city = city;
         this.conference = conference;
@@ -23,12 +27,12 @@ public class Team {
         this.name = name;
     }
 
-    public int getTeamId() {
-        return teamId;
+    public int getId() {
+        return id;
     }
 
-    public void setTeamId(int teamId) {
-        this.teamId = teamId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getAbbreviation() {
@@ -84,18 +88,18 @@ public class Team {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Team team = (Team) o;
-        return Objects.equals(teamId, team.teamId) && Objects.equals(abbreviation, team.abbreviation) && Objects.equals(city, team.city) && Objects.equals(conference, team.conference) && Objects.equals(division, team.division) && Objects.equals(fullName, team.fullName) && Objects.equals(name, team.name);
+        return Objects.equals(id, team.id) && Objects.equals(abbreviation, team.abbreviation) && Objects.equals(city, team.city) && Objects.equals(conference, team.conference) && Objects.equals(division, team.division) && Objects.equals(fullName, team.fullName) && Objects.equals(name, team.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(teamId, abbreviation, city, conference, division, fullName, name);
+        return Objects.hash(id, abbreviation, city, conference, division, fullName, name);
     }
 
     @Override
     public String toString() {
         return "Team{" +
-                "id=" + teamId +
+                "id=" + id +
                 ", abbreviation='" + abbreviation + '\'' +
                 ", city='" + city + '\'' +
                 ", conference='" + conference + '\'' +

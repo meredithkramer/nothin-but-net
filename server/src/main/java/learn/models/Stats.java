@@ -18,6 +18,8 @@ public class Stats {
     private BigDecimal fg3Pct;
     private BigDecimal ftPct;
 
+    public Stats() {}
+
     public Stats(int statsId, Player player, BigDecimal pts, BigDecimal reb, BigDecimal ast, BigDecimal stl,
                  BigDecimal blk, BigDecimal turnover, int gamesPlayed, String min, BigDecimal fgPct, BigDecimal fg3Pct, BigDecimal ftPct) {
         this.statsId = statsId;
