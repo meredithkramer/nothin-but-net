@@ -1,17 +1,28 @@
 package learn.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Objects;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Player {
+    @JsonProperty("id")
     private int playerId;
+    @JsonProperty("first_name")
     private String firstName;
+    @JsonProperty("last_name")
     private String lastName;
     private Position position;
     private String height;
     private String weight;
+    @JsonProperty("jersey_number")
     private String number;
+    @JsonProperty("draft_year")
     private int draftYear;
     private Team team;
+
+    public Player() {}
 
     public Player(int playerId, String firstName, String lastName, Position position, String height, String weight,
                   String number, int draftYear, Team team) {
