@@ -40,7 +40,7 @@ public class PlayerRepository {
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
                 url,
                 HttpMethod.GET,
-                null,
+                entity,
                 new ParameterizedTypeReference<Map<String, Object>>() {}
         );
         Map<String, Object> body = response.getBody();
@@ -55,12 +55,16 @@ public class PlayerRepository {
     }
 
     public List<Player> getPlayersByTeamId(int teamId) {
-        String url = String.format("%s/players?api_key=%s&team_ids[]=%d", baseUrl, apiKey, teamId);
+        String url = String.format("%s/players?team_ids[]=%d", baseUrl, teamId);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", apiKey); // Adjust based on API requirements
+        HttpEntity<String> entity = new HttpEntity<>(headers);
 
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
                 url,
                 HttpMethod.GET,
-                null,
+                entity,
                 new ParameterizedTypeReference<Map<String, Object>>() {}
         );
 
@@ -75,12 +79,16 @@ public class PlayerRepository {
     }
 
     public List<Player> searchPlayers(String search) {
-        String url = String.format("%s/players?api_key=%s&search=%s", baseUrl, apiKey, search);
+        String url = String.format("%s/players?search=%s", baseUrl, search);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", apiKey); // Adjust based on API requirements
+        HttpEntity<String> entity = new HttpEntity<>(headers);
 
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
                 url,
                 HttpMethod.GET,
-                null,
+                entity,
                 new ParameterizedTypeReference<Map<String, Object>>() {}
         );
 
