@@ -1,0 +1,50 @@
+##################################### AUTH TOKEN  #####################################
+@authTOKEN = PASTE AUTH TOKEN HERE
+
+############################## BALLDONTLIE API REQUESTS  ##############################
+
+### GET Season Averages By Year & Player ID
+GET https://api.balldontlie.io/v1/season_averages?season=2023&player_ids[]=115 HTTP/1.1
+Authorization: {{authTOKEN}}
+
+### GET Teams by Division
+GET https://api.balldontlie.io/v1/teams?division=Pacific HTTP/1.1
+Authorization: {{authTOKEN}}
+
+### GET Team By ID
+GET https://api.balldontlie.io/v1/teams/5 HTTP/1.1
+Authorization: {{authTOKEN}}
+
+### GET Players Of Team By ID
+GET https://api.balldontlie.io/v1/players?team_ids[]=13 HTTP/1.1
+Authorization: {{authTOKEN}}
+
+### GET Player By Name
+GET https://api.balldontlie.io/v1/players?search=curry HTTP/1.1
+Authorization: {{authTOKEN}}
+
+### GET Player By ID
+GET https://api.balldontlie.io/v1/players?player_ids[]=115 HTTP/1.1
+Authorization: {{authTOKEN}}
+
+
+
+################################## PROXIED REQUESTS ##################################
+
+### GET Team by ID
+GET http://localhost:8080/team/7 HTTP/1.1
+
+### GET Division by Name
+GET http://localhost:8080/team?division=Pacific HTTP/1.1
+
+### GET Stats By ID
+GET http://localhost:8080/stats/100 HTTP/1.1
+
+### GET Player By ID
+GET http://localhost:8080/player/115 HTTP/1.1
+
+### GET Players of Team By ID
+GET http://localhost:8080/player/team/13 HTTP/1.1
+
+### GET Player By Name
+GET http://localhost:8080/player/search?name=michael HTTP/1.1
