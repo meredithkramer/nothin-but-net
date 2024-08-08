@@ -6,14 +6,15 @@ public class Player {
     private int playerId;
     private String firstName;
     private String lastName;
-    private String position;
+    private Position position;
     private String height;
     private String weight;
     private String number;
     private int draftYear;
     private Team team;
 
-    public Player(int playerId, String firstName, String lastName, String position, String height, String weight, String number, int draftYear, Team team) {
+    public Player(int playerId, String firstName, String lastName, Position position, String height, String weight,
+                  String number, int draftYear, Team team) {
         this.playerId = playerId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -49,11 +50,11 @@ public class Player {
         this.lastName = lastName;
     }
 
-    public String getPosition() {
+    public Position getPosition() {
         return position;
     }
 
-    public void setPosition(String position) {
+    public void setPosition(Position position) {
         this.position = position;
     }
 

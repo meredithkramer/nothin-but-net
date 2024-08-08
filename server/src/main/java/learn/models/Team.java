@@ -5,14 +5,14 @@ import java.util.Objects;
 public class Team {
 
     private int teamId;
-    private String conference;
-    private String division;
+    private Conference conference;
+    private Division division;
     private String city;
     private String name;
     private String fullName;
     private String abbreviation;
 
-    public Team(int teamId, String abbreviation, String city, String conference, String division, String fullName,
+    public Team(int teamId, String abbreviation, String city, Conference conference, Division division, String fullName,
                 String name) {
         this.teamId = teamId;
         this.abbreviation = abbreviation;
@@ -47,19 +47,19 @@ public class Team {
         this.city = city;
     }
 
-    public String getConference() {
+    public Conference getConference() {
         return conference;
     }
 
-    public void setConference(String conference) {
+    public void setConference(Conference conference) {
         this.conference = conference;
     }
 
-    public String getDivision() {
+    public Division getDivision() {
         return division;
     }
 
-    public void setDivision(String division) {
+    public void setDivision(Division division) {
         this.division = division;
     }
 

@@ -1,35 +1,36 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import logoBrand from "../images/logo-brand.png";
 
 export default function Nav() {
   return (
-    <nav className='navbar navbar-expand'>
-      <div className='d-flex'>
-        <NavLink className='navbar-brand' to='/'>
-          Nothin' But Net
+    <nav className="navbar">
+      <div className="nav-start">
+        <NavLink className="navbar-brand" to="/">
+          <img src={logoBrand} className="nav-logo" />
         </NavLink>
-        <ul className='navbar-nav'>
-          <li className='nav-item'>
-            <NavLink className='nav-link' to='/teams'>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/teams">
               Teams
             </NavLink>
           </li>
-          <li className='nav-item'>
-            <NavLink className='nav-link' to='/schedule'>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/schedule">
               Schedule
             </NavLink>
           </li>
-          <li className='nav-item'>
-            <NavLink className='nav-link' to='/stats'>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/stats">
               Stats
             </NavLink>
           </li>
-          <li className='nav-item'>
-            <NavLink className='nav-link' to='/standings'>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/standings">
               Standings
             </NavLink>
           </li>
-          <li className='nav-item'>
-            <NavLink className='nav-link' to='/seasons'>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/seasons">
               Seasons
             </NavLink>
           </li>
