@@ -1,29 +1,37 @@
 package learn.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.math.BigDecimal;
 import java.util.Objects;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Stats {
-    private int statsId;
-    private Player player;
+    @JsonProperty("player_id")
+    private int playerId;
     private BigDecimal pts;
     private BigDecimal reb;
     private BigDecimal ast;
     private BigDecimal stl;
     private BigDecimal blk;
     private BigDecimal turnover;
+    @JsonProperty("games_played")
     private int gamesPlayed;
-    private String min;
+    @JsonProperty("min")
+    private String minutes;
+    @JsonProperty("fg_pct")
     private BigDecimal fgPct;
+    @JsonProperty("fg3_pct")
     private BigDecimal fg3Pct;
+    @JsonProperty("ft_pct")
     private BigDecimal ftPct;
 
     public Stats() {}
 
-    public Stats(int statsId, Player player, BigDecimal pts, BigDecimal reb, BigDecimal ast, BigDecimal stl,
-                 BigDecimal blk, BigDecimal turnover, int gamesPlayed, String min, BigDecimal fgPct, BigDecimal fg3Pct, BigDecimal ftPct) {
-        this.statsId = statsId;
-        this.player = player;
+    public Stats(int playerId, BigDecimal pts, BigDecimal reb, BigDecimal ast, BigDecimal stl,
+                 BigDecimal blk, BigDecimal turnover, int gamesPlayed, String minutes, BigDecimal fgPct, BigDecimal fg3Pct, BigDecimal ftPct) {
+        this.playerId = playerId;
         this.pts = pts;
         this.reb = reb;
         this.ast = ast;
@@ -31,26 +39,18 @@ public class Stats {
         this.blk = blk;
         this.turnover = turnover;
         this.gamesPlayed = gamesPlayed;
-        this.min = min;
+        this.minutes = minutes;
         this.fgPct = fgPct;
         this.fg3Pct = fg3Pct;
         this.ftPct = ftPct;
     }
 
-    public int getStatsId() {
-        return statsId;
+    public int getPlayerId() {
+        return playerId;
     }
 
-    public void setStatsId(int statsId) {
-        this.statsId = statsId;
-    }
-
-    public Player getPlayer() {
-        return player;
-    }
-
-    public void setPlayer(Player playerId) {
-        this.player = playerId;
+    public void setPlayerId(int playerId) {
+        this.playerId = playerId;
     }
 
     public BigDecimal getPts() {
@@ -109,12 +109,12 @@ public class Stats {
         this.gamesPlayed = gamesPlayed;
     }
 
-    public String getMin() {
-        return min;
+    public String getMinutes() {
+        return minutes;
     }
 
-    public void setMin(String min) {
-        this.min = min;
+    public void setMinutes(String minutes) {
+        this.minutes = minutes;
     }
 
     public BigDecimal getFgPct() {
@@ -146,19 +146,18 @@ public class Stats {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Stats stats = (Stats) o;
-        return statsId == stats.statsId && player == stats.player && gamesPlayed == stats.gamesPlayed && Objects.equals(pts, stats.pts) && Objects.equals(reb, stats.reb) && Objects.equals(ast, stats.ast) && Objects.equals(stl, stats.stl) && Objects.equals(blk, stats.blk) && Objects.equals(turnover, stats.turnover) && Objects.equals(min, stats.min) && Objects.equals(fgPct, stats.fgPct) && Objects.equals(fg3Pct, stats.fg3Pct) && Objects.equals(ftPct, stats.ftPct);
+        return playerId == stats.playerId && gamesPlayed == stats.gamesPlayed && Objects.equals(pts, stats.pts) && Objects.equals(reb, stats.reb) && Objects.equals(ast, stats.ast) && Objects.equals(stl, stats.stl) && Objects.equals(blk, stats.blk) && Objects.equals(turnover, stats.turnover) && Objects.equals(minutes, stats.minutes) && Objects.equals(fgPct, stats.fgPct) && Objects.equals(fg3Pct, stats.fg3Pct) && Objects.equals(ftPct, stats.ftPct);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(statsId, player, pts, reb, ast, stl, blk, turnover, gamesPlayed, min, fgPct, fg3Pct, ftPct);
+        return Objects.hash(playerId, pts, reb, ast, stl, blk, turnover, gamesPlayed, minutes, fgPct, fg3Pct, ftPct);
     }
 
     @Override
     public String toString() {
         return "Stats{" +
-                "statsId=" + statsId +
-                ", player=" + player +
+                ", playerId=" + playerId +
                 ", pts=" + pts +
                 ", reb=" + reb +
                 ", ast=" + ast +
@@ -166,7 +165,7 @@ public class Stats {
                 ", blk=" + blk +
                 ", turnover=" + turnover +
                 ", gamesPlayed=" + gamesPlayed +
-                ", min='" + min + '\'' +
+                ", min='" + minutes + '\'' +
                 ", fgPct=" + fgPct +
                 ", fg3Pct=" + fg3Pct +
                 ", ftPct=" + ftPct +
