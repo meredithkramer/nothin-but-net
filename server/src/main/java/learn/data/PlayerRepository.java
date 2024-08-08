@@ -20,11 +20,8 @@ import java.util.stream.Collectors;
 public class PlayerRepository {
     private final RestTemplate restTemplate;
 
-    @Value("${ballDontLie.api.url}")
-    private String baseUrl;
-
-    @Value("${ballDontLie.api.key}")
-    private String apiKey;
+    private String baseUrl = System.getenv("api_url");
+    private String apiKey = System.getenv("api_key");
 
     public PlayerRepository(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;

@@ -19,11 +19,8 @@ import java.util.Map;
 public class StatsRepository {
     private final RestTemplate restTemplate;
 
-    @Value("${ballDontLie.api.url}")
-    private String baseUrl;
-
-    @Value("${ballDontLie.api.key}")
-    private String apiKey;
+    private final String baseUrl = System.getenv("api_url");
+    private final String key = System.getenv("api_key");
 
     public StatsRepository(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
@@ -34,7 +31,7 @@ public class StatsRepository {
                 playerId);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authorization", apiKey); // Adjust based on API requirements
+        headers.set("Authorization", key); // Adjust based on API requirements
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
