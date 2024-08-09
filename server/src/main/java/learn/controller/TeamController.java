@@ -17,6 +17,20 @@ public class TeamController {
         this.service = service;
     }
 
+    @GetMapping
+    public ResponseEntity<List<Team>> getTeams(@RequestParam(required = false) String division) {
+        List<Team> teams;
+        if (division != null && !division.isEmpty()) {
+            teams = service.getTeamsByDivision(division);
+            if (teams.isEmpty()) {
+                return ResponseEntity.notFound().build();
+            }
+        } else {
+            teams = service.getAllTeams();
+        }
+        return ResponseEntity.ok(teams);
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<Team> getTeamById(@PathVariable int id) {
         Team team = service.getTeamById(id);
@@ -27,13 +41,4 @@ public class TeamController {
         return ResponseEntity.ok(team);
     }
 
-    @GetMapping
-    public ResponseEntity<List<Team>> getTeamsByDivision(@RequestParam String division) {
-        List<Team> teams = service.getTeamsByDivision(division);
-
-        if (teams.isEmpty()) {
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(teams);
-    }
 }
