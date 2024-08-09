@@ -16,11 +16,19 @@ export default function Schedule() {
 
     fetchTeams();
   }, []);
+
+  const handleChange = function(event) {
+    console.log('team changed!');
+    console.log(event.target.options.selectedIndex);
+  }
   return (
-    <select>
+    <>
+    <select onChange={handleChange}>
+      <option disabled>Select a Team</option>
       {teams.map((team) => (
-        <option>{team.name}</option>
+        <option key={team.id}>{team.name}</option>
       ))}
     </select>
+    </>
   );
 }

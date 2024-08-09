@@ -19,7 +19,7 @@ export default function TeamTable({ teams }) {
             <td>
               <Link
                 className="btn btn-primary mb-3"
-                to={`/schedule/${team.teamId}`}
+                to={`/schedule/${team.id}`}
               >
                 2023 Schedule
               </Link>
