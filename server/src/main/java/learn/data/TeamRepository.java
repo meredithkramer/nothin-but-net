@@ -42,7 +42,6 @@ public class TeamRepository {
         );
 
         Map<String, Object> body = response.getBody();
-        System.out.println(body);
         if (body != null && body.containsKey("data")) {
             List<Map<String, Object>> teamsData = (List<Map<String, Object>>) body.get("data");
             return teamsData.stream()
