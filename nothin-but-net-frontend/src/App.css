@@ -202,6 +202,11 @@ a {
   transition: all ease 1s;
 }
 
+/* ----------------- TEAMS ----------------- */
+
+#teams-table {
+  /* border: 1px dotted yellow; */
+}
 
 /* ----------------- ANIMATIONS ----------------- */
 
