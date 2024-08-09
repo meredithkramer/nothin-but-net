@@ -265,6 +265,55 @@ td {
   transition: all ease .75s;
 }
 
+/* ----------------- COMING SOON ----------------- */
+
+.coming-soon {
+  text-align: center;
+}
+
+.cs-header {
+  padding: 3em 5em;
+}
+
+#cs-sub-header {
+  color: inherit;
+  transition: all ease .75s;
+}
+
+#cs-sub-header:hover {
+  color: #b52532;
+  transition: all ease .35s;
+}
+
+.cs-header-underline {
+  margin: -6em auto 3em auto;
+  width: 0%;
+  border: 1px solid transparent;
+  transition: all ease .35s;
+}
+
+.coming-soon:hover .cs-header-underline {
+  width: 40%;
+  border: 1px solid #b52532;
+  transition: all ease .35s;
+}
+
+span {
+  font-size: 1.25em;
+}
+
+.cs-fake-email {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all ease .75s;
+}
+
+.cs-fake-email:hover {
+  color: #b52532;
+  transition: all ease .35s;
+}
+
 /* ----------------- ANIMATIONS ----------------- */
 
 @keyframes bounce {
