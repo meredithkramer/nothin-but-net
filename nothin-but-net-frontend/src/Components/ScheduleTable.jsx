@@ -15,7 +15,7 @@ export default function ScheduleTable({ teamId }) {
         };
     
         fetchGames();
-      }, []);
+      }, [teamId]);
 
   return (
     <table className="table table-striped">
