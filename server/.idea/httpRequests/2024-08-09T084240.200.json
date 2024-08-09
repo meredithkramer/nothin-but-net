@@ -1,0 +1,11 @@
+{
+  "data": {
+    "id": 5,
+    "conference": "East",
+    "division": "Central",
+    "city": "Chicago",
+    "name": "Bulls",
+    "full_name": "Chicago Bulls",
+    "abbreviation": "CHI"
+  }
+}
