@@ -30,8 +30,8 @@ export default function ScheduleTable({ teamId }) {
         {games.map((game) => (
           <tr key={game.id}>
             <td>{game.date}</td>
-            <td>{game.home_team_score}</td>
-            <td>{game.visitor_team_score}</td>
+            <td>{game.home_team.name} {game.home_team_score}</td>
+            <td>{game.visitor_team.name} {game.visitor_team_score}</td>
           </tr>
         ))}
       </tbody>
