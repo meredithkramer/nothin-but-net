@@ -19,8 +19,8 @@ import java.util.stream.Collectors;
 @Repository
 public class GameRepository {
     private final RestTemplate restTemplate;
-    private final String baseUrl = System.getenv("api_url");
-    private final String key = System.getenv("api_key");
+    private String baseUrl = "https://api.balldontlie.io/v1";
+    private String apiKey = "b9f46c28-06d5-4900-9038-ba121eca4023";
 
     public GameRepository(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
@@ -30,7 +30,7 @@ public class GameRepository {
         String url = String.format("%s/games?seasons[]=2023&team_ids[]=%s&per_page=100", baseUrl, gameId);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authorization", key);
+        headers.set("Authorization", apiKey);
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(

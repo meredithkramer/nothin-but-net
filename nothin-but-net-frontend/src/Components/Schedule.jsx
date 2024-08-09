@@ -1,8 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import ScheduleTable from "./ScheduleTable";
 
 export default function Schedule() {
   const [teams, setTeams] = useState([]);
+  const [teamId, setTeamId] = useState(0);
 
   useEffect(() => {
     const fetchTeams = async () => {
@@ -18,17 +20,17 @@ export default function Schedule() {
   }, []);
 
   const handleChange = function(event) {
-    console.log('team changed!');
-    console.log(event.target.options.selectedIndex);
+    setTeamId(event.target.options.selectedIndex);
   }
   return (
     <>
     <select onChange={handleChange}>
-      <option disabled>Select a Team</option>
+      <option disabled selected>Select a Team</option>
       {teams.map((team) => (
         <option key={team.id}>{team.name}</option>
       ))}
     </select>
+    {teamId == 0 ? "Select Team" : <ScheduleTable teamId={teamId} />}
     </>
   );
 }

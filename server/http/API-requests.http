@@ -64,4 +64,7 @@ GET http://localhost:8080/player/search?name=michael HTTP/1.1
 ### GET Teams all
 GET http://localhost:8080/team HTTP/1.1
 
+### GET games by team id
+GET http://localhost:8080/games/20 HTTP/1.1
+
 
