@@ -20,8 +20,8 @@ import java.util.stream.Collectors;
 public class TeamRepository {
     private final RestTemplate restTemplate;
 
-    private final String baseUrl = System.getenv("api_url");
-    private final String key = System.getenv("api_key");
+    private String baseUrl = "https://api.balldontlie.io/v1";
+    private String apiKey = "b9f46c28-06d5-4900-9038-ba121eca4023";
 
     public TeamRepository(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
@@ -31,7 +31,7 @@ public class TeamRepository {
         String url = String.format("%s/teams", baseUrl);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authorization", key);
+        headers.set("Authorization", apiKey);
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
@@ -57,7 +57,7 @@ public class TeamRepository {
         String url = String.format("%s/teams/%d", baseUrl, id);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authorization", key);
+        headers.set("Authorization", apiKey);
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
@@ -79,7 +79,7 @@ public class TeamRepository {
         String url = String.format("%s/teams?division=%s", baseUrl, division);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authorization", key);
+        headers.set("Authorization", apiKey);
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
