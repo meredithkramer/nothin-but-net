@@ -1,0 +1,477 @@
+[
+  {
+    "position": "G",
+    "height": "6-5",
+    "weight": "200",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 111,
+    "first_name": "Jamal",
+    "last_name": "Crawford",
+    "jersey_number": "1",
+    "draft_year": 2000
+  },
+  {
+    "position": "C",
+    "height": "6-10",
+    "weight": "245",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 122,
+    "first_name": "Angel",
+    "last_name": "Delgado",
+    "jersey_number": "31",
+    "draft_year": 2018
+  },
+  {
+    "position": "F",
+    "height": "6-8",
+    "weight": "220",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 172,
+    "first_name": "Paul",
+    "last_name": "George",
+    "jersey_number": "13",
+    "draft_year": 2010
+  },
+  {
+    "position": "G",
+    "height": "6-5",
+    "weight": "220",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 192,
+    "first_name": "James",
+    "last_name": "Harden",
+    "jersey_number": "1",
+    "draft_year": 2009
+  },
+  {
+    "position": "G",
+    "height": "6-8",
+    "weight": "208",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 218,
+    "first_name": "Rodney",
+    "last_name": "Hood",
+    "jersey_number": "22",
+    "draft_year": 2014
+  },
+  {
+    "position": "F-G",
+    "height": "6-7",
+    "weight": "215",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 245,
+    "first_name": "Wesley",
+    "last_name": "Johnson",
+    "jersey_number": "4",
+    "draft_year": 2010
+  },
+  {
+    "position": "F",
+    "height": "6-7",
+    "weight": "225",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 274,
+    "first_name": "Kawhi",
+    "last_name": "Leonard",
+    "jersey_number": "2",
+    "draft_year": 2011
+  },
+  {
+    "position": "F",
+    "height": "6-8",
+    "weight": "230",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 331,
+    "first_name": "Johnathan",
+    "last_name": "Motley",
+    "jersey_number": "15",
+    "draft_year": 0
+  },
+  {
+    "position": "F",
+    "height": "6-6",
+    "weight": "240",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 353,
+    "first_name": "Semi",
+    "last_name": "Ojeleye",
+    "jersey_number": "37",
+    "draft_year": 2017
+  },
+  {
+    "position": "F-C",
+    "height": "6-10",
+    "weight": "254",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 371,
+    "first_name": "Mason",
+    "last_name": "Plumlee",
+    "jersey_number": "44",
+    "draft_year": 2013
+  },
+  {
+    "position": "F-G",
+    "height": "6-4",
+    "weight": "215",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 380,
+    "first_name": "Norman",
+    "last_name": "Powell",
+    "jersey_number": "24",
+    "draft_year": 2015
+  },
+  {
+    "position": "G",
+    "height": "6-5",
+    "weight": "196",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 437,
+    "first_name": "Milos",
+    "last_name": "Teodosic",
+    "jersey_number": "4",
+    "draft_year": 0
+  },
+  {
+    "position": "F",
+    "height": "6-8",
+    "weight": "245",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 439,
+    "first_name": "Daniel",
+    "last_name": "Theis",
+    "jersey_number": "10",
+    "draft_year": 0
+  },
+  {
+    "position": "G",
+    "height": "6-4",
+    "weight": "215",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 445,
+    "first_name": "Sindarius",
+    "last_name": "Thornwell",
+    "jersey_number": "15",
+    "draft_year": 2017
+  },
+  {
+    "position": "F",
+    "height": "6-5",
+    "weight": "245",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 450,
+    "first_name": "PJ",
+    "last_name": "Tucker",
+    "jersey_number": "17",
+    "draft_year": 2006
+  },
+  {
+    "position": "G",
+    "height": "6-5",
+    "weight": "198",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 466,
+    "first_name": "Tyrone",
+    "last_name": "Wallace",
+    "jersey_number": "9",
+    "draft_year": 2016
+  },
+  {
+    "position": "G",
+    "height": "6-3",
+    "weight": "210",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 467,
+    "first_name": "John",
+    "last_name": "Wall",
+    "jersey_number": "1",
+    "draft_year": 2010
+  },
+  {
+    "position": "G",
+    "height": "6-4",
+    "weight": "200",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 472,
+    "first_name": "Russell",
+    "last_name": "Westbrook",
+    "jersey_number": "0",
+    "draft_year": 2008
+  },
+  {
+    "position": "G",
+    "height": "6-5",
+    "weight": "226",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 478,
+    "first_name": "C.J.",
+    "last_name": "Williams",
+    "jersey_number": "12",
+    "draft_year": 2012
+  },
+  {
+    "position": "C",
+    "height": "7-0",
+    "weight": "240",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 493,
+    "first_name": "Ivica",
+    "last_name": "Zubac",
+    "jersey_number": "40",
+    "draft_year": 2016
+  },
+  {
+    "position": null,
+    "height": "6-1",
+    "weight": "180",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 573,
+    "first_name": "Pooh",
+    "last_name": "Richardson",
+    "jersey_number": "24",
+    "draft_year": 1989
+  },
+  {
+    "position": null,
+    "height": "7-0",
+    "weight": "290",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 676,
+    "first_name": "Stanley",
+    "last_name": "Roberts",
+    "jersey_number": "53",
+    "draft_year": 1991
+  },
+  {
+    "position": null,
+    "height": "6-4",
+    "weight": "190",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 683,
+    "first_name": "Carlton",
+    "last_name": "McKinney",
+    "jersey_number": "4",
+    "draft_year": 0
+  },
+  {
+    "position": null,
+    "height": "6-0",
+    "weight": "170",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 705,
+    "first_name": "David",
+    "last_name": "Rivers",
+    "jersey_number": "32",
+    "draft_year": 1988
+  },
+  {
+    "position": null,
+    "height": "7-0",
+    "weight": "270",
+    "team": {
+      "id": 13,
+      "conference": "West",
+      "division": "Pacific",
+      "city": "LA",
+      "name": "Clippers",
+      "abbreviation": "LAC",
+      "full_name": "LA Clippers"
+    },
+    "id": 743,
+    "first_name": "Elmore",
+    "last_name": "Spencer",
+    "jersey_number": "27",
+    "draft_year": 1992
+  }
+]

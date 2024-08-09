@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function TeamTable({ teams }) {
     return (
         <table className="table table-striped">
@@ -10,10 +12,13 @@ function TeamTable({ teams }) {
             </thead>
             <tbody>
                 {teams.map(team => (
-                    <tr key={team.teamId}>
+                    <tr key={team.id}>
                         <td>{team.city}</td>
                         <td>{team.name}</td>
                         <td>{team.division}</td>
+                        <td><Link className='btn btn-primary mb-3' to={`/schedule/${team.teamId}`}>
+                    2023 Schedule
+                </Link></td>
                     </tr>
                 ))}
             </tbody>
