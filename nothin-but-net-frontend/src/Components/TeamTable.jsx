@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 
 export default function TeamTable({ teams }) {
   return (
-    <table className="table table-striped" id="teams-table">
-      <thead>
+    <table className="table" id="teams-table">
+      <thead className="table-head">
         <tr>
-          <th>City</th>
-          <th>Team</th>
-          <th>Division</th>
+          <th className="table-head-header">City</th>
+          <th className="table-head-header">Team</th>
+          <th className="table-head-header">Division</th>
+          <th className="table-head-header">Schedule</th>
         </tr>
       </thead>
       <tbody>
@@ -17,10 +18,7 @@ export default function TeamTable({ teams }) {
             <td>{team.name}</td>
             <td>{team.division}</td>
             <td>
-              <Link
-                className="btn btn-primary mb-3"
-                to={`/schedule/${team.teamId}`}
-              >
+              <Link className="table-button" to={`/schedule/${team.teamId}`}>
                 2023 Schedule
               </Link>
             </td>

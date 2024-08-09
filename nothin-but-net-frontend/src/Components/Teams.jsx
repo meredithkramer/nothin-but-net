@@ -20,6 +20,7 @@ export default function Teams() {
 
   return (
     <>
+      <h1 id="teams-header">Teams</h1>
       {teams.length == 0 ? (
         <div className="alert alert-warning py-4">Airball! No teams found!</div>
       ) : (

@@ -204,8 +204,65 @@ a {
 
 /* ----------------- TEAMS ----------------- */
 
+#teams-header {
+  padding: .5em;
+  margin-bottom: -.5em;
+  text-align: center;
+}
+
 #teams-table {
-  /* border: 1px dotted yellow; */
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+tr:nth-child(even) {
+  background-color: #2f2f2f;
+}
+
+tr {
+  transition: all ease .5s;
+}
+
+tr:hover {
+  transition: all ease .75s;
+  background-color: grey;
+}
+
+tr:hover .table-head-header {
+  background-color: transparent;
+}
+
+.table-head {
+  /* border: 1px solid yellow; */
+  border-left: transparent;
+  align-items: center;
+}
+
+.table-head-header {
+  font-size: 1.5em;
+  /* border-left: 1px solid magenta; */
+  width: 200px;
+}
+
+td {
+  font-size: 1.25em;
+  /* border: 1px solid #2f2f2f; */
+  padding: .5em;
+  width: 200px;
+  text-align: center;
+}
+
+.table-button {
+  text-decoration: none;
+  transition: all ease .5s;
+}
+
+.table-button:hover {
+  text-decoration: underline;
+  transition: all ease .75s;
 }
 
 /* ----------------- ANIMATIONS ----------------- */
