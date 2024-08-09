@@ -14,6 +14,10 @@ public class TeamService {
         this.teamRepository = teamRepository;
     }
 
+    public List<Team> getAllTeams() {
+        return teamRepository.getAllTeams();
+    }
+
     public Team getTeamById(Integer id) {
         return teamRepository.getTeamById(id);
     }
