@@ -27,11 +27,37 @@ public class TeamRepository {
         this.restTemplate = restTemplate;
     }
 
+    public List<Team> getAllTeams() {
+        String url = String.format("%s/teams", baseUrl);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", key);
+        HttpEntity<String> entity = new HttpEntity<>(headers);
+
+        ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
+                url,
+                HttpMethod.GET,
+                entity,
+                new ParameterizedTypeReference<Map<String, Object>>() {}
+        );
+
+        Map<String, Object> body = response.getBody();
+        System.out.println(body);
+        if (body != null && body.containsKey("data")) {
+            List<Map<String, Object>> teamsData = (List<Map<String, Object>>) body.get("data");
+            return teamsData.stream()
+                    .limit(30)
+                    .map(item -> new ObjectMapper().convertValue(item, Team.class))
+                    .collect(Collectors.toList());
+        }
+        return Collections.emptyList();
+    }
+
     public Team getTeamById(int id) {
         String url = String.format("%s/teams/%d", baseUrl, id);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authorization", key); // Adjust based on API requirements
+        headers.set("Authorization", key);
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
@@ -53,7 +79,7 @@ public class TeamRepository {
         String url = String.format("%s/teams?division=%s", baseUrl, division);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authorization", key); // Adjust based on API requirements
+        headers.set("Authorization", key);
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
