@@ -1,7 +1,34 @@
-import React from 'react'
+import { useEffect, useState } from "react";
 
-export default function Teams() {
-  return (
-    <div>Teams</div>
-  )
+import TeamTable from "./TeamTable";
+
+function Teams() {
+
+    const [teams, setTeams] = useState([]);
+
+    useEffect(() => {
+        const fetchTeams = async () => {
+            const response = await fetch("http://localhost:8080/team");
+            if (response.ok) {
+                setTeams(await response.json());
+            } else {
+                setTeams([]);
+            }
+        };
+
+        fetchTeams();
+    }, []);
+
+
+    return (
+        <>
+            {teams.length == 0 ?
+                <div className="alert alert-warning py-4">
+                    Airball! No teams found!
+                </div>
+                : <TeamTable teams={teams} />}
+        </>
+    );
 }
+
+export default Teams;

@@ -7,8 +7,20 @@
 GET https://api.balldontlie.io/v1/season_averages?season=2023&player_ids[]=115 HTTP/1.1
 Authorization: {{authTOKEN}}
 
+### GET games by season
+GET https://api.balldontlie.io/v1/games?seasons[]=2023
+Authorization: {{authTOKEN}}
+
+### GET Stats
+GET https://api.balldontlie.io/v1/stats HTTP/1.1
+Authorization: {{authTOKEN}}
+
 ### GET Teams by Division
 GET https://api.balldontlie.io/v1/teams?division=Pacific HTTP/1.1
+Authorization: {{authTOKEN}}
+
+### GET Teams
+GET https://api.balldontlie.io/v1/teams HTTP/1.1
 Authorization: {{authTOKEN}}
 
 ### GET Team By ID
@@ -48,3 +60,5 @@ GET http://localhost:8080/player/team/13 HTTP/1.1
 
 ### GET Player By Name
 GET http://localhost:8080/player/search?name=michael HTTP/1.1
+
+

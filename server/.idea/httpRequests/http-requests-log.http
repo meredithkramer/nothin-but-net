@@ -1,3 +1,269 @@
+GET http://localhost:8080/player/search?name=michael
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T110052.200.json
+
+###
+
+GET http://localhost:8080/player/115
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T105905.200.json
+
+###
+
+GET http://localhost:8080/player/115
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T105516.500.html
+
+###
+
+GET http://localhost:8080/player/team/13
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T105021.500.json
+
+###
+
+GET http://localhost:8080/player/115
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T103005.500.json
+
+###
+
+GET http://localhost:8080/player/team/13
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T102332.500.json
+
+###
+
+GET http://localhost:8080/player/115
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T102035.500.json
+
+###
+
+GET http://localhost:8080/player/search?name=michael
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T101943.500.json
+
+###
+
+GET https://api.balldontlie.io/v1/games?seasons[]=2023
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T101544.200.json
+
+###
+
+GET https://api.balldontlie.io/v1/games?seasons[]=2022
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T101510.200.json
+
+###
+
+GET https://api.balldontlie.io/v1/games?seasons[]=2005
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T101459.200.json
+
+###
+
+GET https://api.balldontlie.io/v1/games?seasons[]=2023
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T101323.200.json
+
+###
+
+GET https://api.balldontlie.io/v1/games?seasons[]=2023
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T094238.200.json
+
+###
+
+GET https://api.balldontlie.io/v1/games
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T093547.200.json
+
+###
+
+GET https://api.balldontlie.io/v1/stats
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T093317.200.json
+
+###
+
+GET https://api.balldontlie.io/v1/stats
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T093302.200.json
+
+###
+
+GET https://api.balldontlie.io/v1/stats
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T093200.401.txt
+
+###
+
+GET https://api.balldontlie.io/v1/teams?id<30=
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T091349.200.json
+
+###
+
+GET https://api.balldontlie.io/v1/teams
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T091138.200.json
+
+###
+
+GET https://api.balldontlie.io/v1/teams?division=Pacific
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T091111.200.json
+
+###
+
+GET http://localhost:8080/player/team/13
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T090520.500.json
+
+###
+
+GET https://api.balldontlie.io/v1/season_averages?season=2023&player_ids[]=115
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T090515.200.json
+
+###
+
+GET http://localhost:8080/team?division=Pacific
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T085324.500.json
+
+###
+
+GET https://api.balldontlie.io/v1/season_averages?season=2023&player_ids[]=115
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T085031.200.json
+
+###
+
+GET http://localhost:8080/stats/100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T084922.500.json
+
+###
+
+GET http://localhost:8080/stats/100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T084831.500.json
+
+###
+
+GET https://api.balldontlie.io/v1/teams?division=Pacific
+Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T084736.200.json
+
+###
+
+GET http://localhost:8080/team/7
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T084644.500.json
+
+###
+
 GET https://api.balldontlie.io/v1/teams/5
 Authorization: b9f46c28-06d5-4900-9038-ba121eca4023
 Connection: Keep-Alive
