@@ -20,8 +20,8 @@ import java.util.stream.Collectors;
 public class PlayerRepository {
     private final RestTemplate restTemplate;
 
-    private String baseUrl = System.getenv("api_url");
-    private String apiKey = System.getenv("api_key");
+    private String baseUrl = "https://api.balldontlie.io/v1";
+    private String apiKey = "b9f46c28-06d5-4900-9038-ba121eca4023";
 
     public PlayerRepository(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
