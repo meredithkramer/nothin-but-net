@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/team")
+@CrossOrigin(origins = {"http://localhost:5173"})
 public class TeamController {
     private final TeamService service;
 
